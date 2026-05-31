@@ -1,18 +1,14 @@
-# GPT-2 Text Generation
+## Fine-Tuning GPT-2
 
-This project demonstrates text generation using OpenAI's GPT-2 model through the Hugging Face Transformers library.
+A custom dataset was created and used to fine-tune GPT-2 using Hugging Face Transformers and the Trainer API.
 
-## Features
-- Generates text from a given prompt
-- Uses pretrained GPT-2 model
-- Saves generated text to a file
+### Dataset
+- Custom text dataset (`dataset.txt`)
 
-## Technologies Used
-- Python
-- Hugging Face Transformers
-- GPT-2
+### Training
+- Model: GPT-2
+- Epochs: 1
+- Framework: Hugging Face Transformers
 
-## Run
-
-```bash
-python app.py
+### Result
+The fine-tuned model successfully generated text based on the custom dataset.

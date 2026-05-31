@@ -1,0 +1,6 @@
+Artificial Intelligence is transforming industries worldwide.
+Machine learning helps systems learn from data.
+Deep learning models can identify patterns.
+Generative AI can create text and images.
+Python is widely used in artificial intelligence.
+Large language models help generate human-like text.
