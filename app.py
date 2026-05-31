@@ -2,10 +2,19 @@ from transformers import pipeline
 
 generator = pipeline("text-generation", model="gpt2")
 
+prompt = "Artificial Intelligence is"
+
 result = generator(
-    "Artificial Intelligence is",
-    max_length=80,
+    prompt,
+    max_length=100,
     num_return_sequences=1
 )
 
-print(result[0]["generated_text"])
+generated_text = result[0]["generated_text"]
+
+print(generated_text)
+
+with open("outputs/generated_text.txt", "w", encoding="utf-8") as file:
+    file.write(generated_text)
+
+print("\nOutput saved to outputs/generated_text.txt")

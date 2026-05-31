@@ -1,24 +1,18 @@
-# PRODIGY_GA_01
+# GPT-2 Text Generation
 
-GPT-2 Text Generation using Hugging Face Transformers.
+This project demonstrates text generation using OpenAI's GPT-2 model through the Hugging Face Transformers library.
+
+## Features
+- Generates text from a given prompt
+- Uses pretrained GPT-2 model
+- Saves generated text to a file
 
 ## Technologies Used
-
 - Python
 - Hugging Face Transformers
 - GPT-2
-- PyTorch
-
-## Features
-
-- Generates text from user prompt
-- Uses pretrained GPT-2 model
-- Saves output in text file
-
-## Installation
-
-pip install -r requirements.txt
 
 ## Run
 
+```bash
 python app.py
