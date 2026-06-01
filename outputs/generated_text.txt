@@ -24,3 +24,8 @@ In addition, machine learning will be able to learn more about an individual by 
 "The idea is to let the human brain learn about the way the human brain works and how it's doing that in a way that allows it to understand what it's doing in a more nuanced way," Kollerman said.
 
 A major goal is to make AI systems have better tools
+
+==================================================
+PROMPT: Artificial Intelligence is
+OUTPUT:
+Artificial Intelligence is not new. It has been around for decades, and it has been evolving for decades. But the AI is still evolving, and it is rapidly changing. So I'm a little worried that AI will take over our jobs and our lives.
