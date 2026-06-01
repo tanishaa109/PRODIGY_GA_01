@@ -1,20 +1,34 @@
 from transformers import pipeline
 
-generator = pipeline("text-generation", model="gpt2")
+def main():
+    print("=== GPT-2 Text Generation App ===")
 
-prompt = "Artificial Intelligence is"
+    # Load model
+    generator = pipeline("text-generation", model="gpt2")
 
-result = generator(
-    prompt,
-    max_length=100,
-    num_return_sequences=1
-)
+    # Take user input
+    prompt = input("\nEnter your prompt: ")
 
-generated_text = result[0]["generated_text"]
+    # Generate text
+    result = generator(
+        prompt,
+        max_length=80,
+        num_return_sequences=1
+    )
 
-print(generated_text)
+    generated_text = result[0]["generated_text"]
 
-with open("outputs/generated_text.txt", "w", encoding="utf-8") as file:
-    file.write(generated_text)
+    print("\n=== Generated Output ===\n")
+    print(generated_text)
 
-print("\nOutput saved to outputs/generated_text.txt")
+    # Save output to file
+    with open("outputs/generated_text.txt", "a", encoding="utf-8") as f:
+        f.write("\n" + "="*50 + "\n")
+        f.write("PROMPT: " + prompt + "\n")
+        f.write("OUTPUT:\n" + generated_text + "\n")
+
+    print("\n✔ Output saved to outputs/generated_text.txt")
+
+
+if __name__ == "__main__":
+    main()
