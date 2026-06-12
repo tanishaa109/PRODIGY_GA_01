@@ -177,6 +177,31 @@ Through this project, I learned:
 
 ---
 
+## Note for Running the Notebook
+
+This project was developed and tested using **Google Colab**.
+
+If you open the notebook in VS Code, you may see the warning:
+
+```python
+Import "google.colab" could not be resolved
+```
+
+This is expected because the `google.colab` package is available only inside the Google Colab environment.
+
+### How to Run
+
+1. Download the notebook from this repository.
+2. Open Google Colab.
+3. Upload the notebook.
+4. Run all cells sequentially.
+5. Ensure GPU runtime is enabled:
+
+   * Runtime → Change Runtime Type → GPU
+
+The notebook is intended to be executed in Google Colab and may show import warnings in local IDEs such as VS Code.
+
+
 ## Internship Task
 
 Task 01 - GPT-2 Text Generation and Fine-Tuning
